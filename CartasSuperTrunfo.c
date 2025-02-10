@@ -49,7 +49,7 @@ int main() {
     // Imprimir na tela as informações passadas pelo usuário
     printf ("CIDADE: %s \n", nome);
     printf ("CÓDIGO DA CARTA: %s \n", codigo);
-    printf ("POPULAÇÃO: %d \n", populacao);
+    printf ("POPULAÇÃO (mil): %d mil \n", populacao);
     printf ("ÁREA (M²): %f \n", area);
     printf ("PIB: %f \n", pib);
     printf ("QUANTIDADE DE PONTOS TURÍSTICOS: %d \n", turistico);
