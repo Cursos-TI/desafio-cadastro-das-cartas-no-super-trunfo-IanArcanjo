@@ -15,6 +15,8 @@ int main() {
     float area; // Área da cidade
     float pib; // PIB da Cidade
     int turistico; // Número de pontos turísticos
+    float ppc; // Pib per capta
+    float denspop; // Densidade Populacional
 
     printf ("SUPER TRUNFO PAÍSES\n");
     printf ("\nSeja bem-vindo(a) para o jogo SUPER TRUNFO PAÍSES. \nNesse jogo você deverá cadastrar cartas de cidadeas, informando dados da cidade à sua escolha,\ncomo seu nome, sua população, área e algumas outras informações.\n");  // Aqui é a apresentação do jogo, para orientar o usuário o que deve ser feito.
@@ -46,13 +48,19 @@ int main() {
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
+    //Calcular PIB per capta e Densidade Populacional
+    ppc = pib / populacao;
+    denspop = populacao / area;
+
     // Imprimir na tela as informações passadas pelo usuário
     printf ("CIDADE: %s \n", nome);
     printf ("CÓDIGO DA CARTA: %s \n", codigo);
     printf ("POPULAÇÃO (mil): %d mil \n", populacao);
-    printf ("ÁREA (M²): %f \n", area);
-    printf ("PIB: %f \n", pib);
+    printf ("ÁREA (M²): %.2f \n", area);
+    printf ("PIB: R$ %.2f \n", pib);
     printf ("QUANTIDADE DE PONTOS TURÍSTICOS: %d \n", turistico);
+    printf ("PIB per Capta: R$ %.2f\n", ppc);
+    printf ("Densidade Populacional: %.2f\n", denspop);
 
     return 0;
 
